@@ -1,0 +1,1 @@
+this is a list of all the stuff i asked the chat gpt and what it gave back
