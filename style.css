@@ -1,0 +1,25 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+#startBtn {
+  margin-top: 50px;
+  padding: 10px 20px;
+  font-size: 18px;
+}
+
+#target {
+  width: 200px;
+  height: 200px; /* Make it square */
+  margin: 50px auto;
+  display: none;
+  cursor: pointer;
+}
+
+#result {
+  margin-top: 20px;
+  font-size: 24px;
+}
+
+  
