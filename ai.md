@@ -12,3 +12,17 @@ restarted becouse it could not work
     first input 
     in javascript vanila with no extentions and the javascript css and html separated make a game were you press a botten to start and after 1 to 10 seconds the screen turns green and you click the scrren it tells you how long it took you to click the screen after it turned green and the game ends
 got it fanoly working it was styles insted of style 
+
+made it so if you click to early you fall
+asked this
+    change the bare minimum and tell me what you change to make it so if you click the Butten to early when its red it says you clicked to early and sends you back to the start.
+got this
+    else 
+            result.textContent = "You clicked too early! Try again.";
+            startBtn.style.display = "inline-block";
+
+added instructions 
+tolled it 
+    add text bellow the start Butten that says press the Butten to start click the square when it turns green if you click to early you lose
+got this
+    <p>Press the button to start. Click the square when it turns green. If you click too early, you lose!</p>

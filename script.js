@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
     function startGame() {
         startBtn.style.display = "none";
         result.textContent = "";
-        const delay = getRandomDelay(1000, 10000); // between 1 and 10 seconds
+        const delay = getRandomDelay(2000, 10000); // between 1 and 10 seconds
         setTimeout(() => {
             target.style.backgroundColor = "green";
             target.style.display = "block";
@@ -21,14 +21,18 @@ document.addEventListener("DOMContentLoaded", function() {
         }, delay);
     }
     target.addEventListener("click", function() {
+        const targetColor = window.getComputedStyle(target).getPropertyValue('background-color');
         if (target.style.backgroundColor === "green") {
             const endTime = new Date().getTime();
             const reactionTime = (endTime - startTime) / 1000; // in seconds
             result.textContent = `Your reaction time: ${reactionTime.toFixed(2)} seconds`;
             target.style.backgroundColor = "red";
             startBtn.style.display = "inline-block";
-        }
-    });
+        } else {
+            result.textContent = "You clicked too early! Try again.";
+            startBtn.style.display = "inline-block";
+        }   
+});
     function getRandomDelay(min, max) {
         return Math.floor(Math.random() * (max - min + 1) + min);
     }
