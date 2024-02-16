@@ -26,3 +26,10 @@ tolled it
     add text bellow the start Butten that says press the Butten to start click the square when it turns green if you click to early you lose
 got this
     <p>Press the button to start. Click the square when it turns green. If you click too early, you lose!</p>
+        
+using the code i gave you and using vanila java script will keeping the java script html and style css separate  add a new butten bellow target box called tenBoxes
+it gave me wered code so then i spesified to just make the butten dont give it any functionaly yet it gave me this
+    <button id="tenBoxes">Generate 10 Boxes</button>
+
+had they ai add a ton of code to creat a random patter of ten boxes and then time how long it take to click them
+it add in java script lines 37 to 93 
